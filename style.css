@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+header {
+    background: url(img/latar\ toko.jpg) no-repeat center center/cover;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+nav a {
+    color: white;
+    padding: 0rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and(max-widht: 768px) {
+    
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    display: block;
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+}
+}
+
+
+body.homepage {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+
+    height: 30hv;   
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-header h1 {
+    color: #007bff;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.welcome-text {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.site-footer {
+    background-color: rgb(251, 251, 251, 0.9);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(150, 150, 150,);
+}
+
+/* Timpa */
+/* homepage.css - dimuat SETELAH style.css */
+
+main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+main section { margin-bottom: 3rem; }
+
+.section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* 1. Promo bar */
+/* .promo-bar {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+} */
+
+/* 2. Header */
+.site-header { padding: 0; text-align: left; }
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+}
+.site-header h1 { color: #fff; font-size: 1.5rem; }
+.search-box { flex: 1; display: flex; min-width: 220px; }
+.search-box input {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+.search-box button {
+    padding: 0 1.2rem;
+    border: none;
+    background: #ffc107;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+.cart-link { color: #fff; text-decoration: none; font-weight: bold; }
+.site-header nav {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.6rem 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.site-header nav a { margin: 0; color: #fff; }
+.site-header nav a:hover { color: #ffc107; }
+
+/* 3. Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("img/latar-toko.jpg") no-repeat center center / cover;
+    background-color: #0a58ca; /* cadangan kalau gambar gagal dimuat */
+    color: #fff;
+    border-radius: 8px;
+    padding: 5rem 2rem;
+}
+.hero-content { max-width: 520px; }
+.hero h2 { font-size: 2rem; margin-bottom: 0.8rem; }
+.hero p { margin-bottom: 1.5rem; }
+
+.btn, .btn-small {
+    display: inline-block;
+    background: #ffc107;
+    color: #222;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover, .btn-small:hover { background: #e0a800; }
+.btn-small { padding: 0.5rem 1rem; font-size: 0.9rem; }
+
+/* 4. Keunggulan */
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.benefits div {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+}
+.benefits strong { display: block; color: #007bff; }
+.benefits span { font-size: 0.9rem; color: #666; }
+
+/* 5. Kategori */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+.category {
+    background: #e7f1ff;
+    color: #0a58ca;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.category:hover { background: #cfe2ff; }
+
+/* 6. Produk (memakai .product-grid dari style.css) */
+.product-card { position: relative; }
+.product-card h3 { margin: 0.5rem 0; font-size: 1rem; }
+.price { color: #d63384; font-weight: bold; margin-bottom: 0.8rem; }
+.price s { color: #999; font-weight: normal; font-size: 0.85rem; }
+.badge {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    background: #dc3545;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+}
+.see-all { text-align: center; margin-top: 1.5rem; }
+.see-all a { color: #007bff; font-weight: bold; }
+
+/* 7. Testimoni */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+.testimonials blockquote {
+    background: #fff;
+    border-left: 4px solid #007bff;
+    padding: 1rem;
+}
+.testimonials cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* 8. Newsletter */
+.newsletter {
+    background: #e7f1ff;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+}
+.newsletter h2 { margin-bottom: 1rem; }
+.newsletter form { display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
+.newsletter input { padding: 0.6rem; min-width: 240px; border: 1px solid #ccc; border-radius: 4px; }
+
+/* 9. Footer */
+.site-footer {
+    background: #222;
+    color: #ddd;
+    padding: 2rem 1.5rem 1rem;
+    margin-top: 2rem;
+    box-shadow: none;
+}
+.footer-cols {
+    max-width: 1100px;
+    margin: 0 auto 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    text-align: left;
+}
+.footer-cols h4 { color: #fff; margin-bottom: 0.5rem; }
+.footer-cols a { display: block; color: #ddd; text-decoration: none; margin: 0.3rem 0; }
+.footer-cols a:hover { color: #ffc107; }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .hero { padding: 3rem 1.2rem; }
+    .hero h2 { font-size: 1.5rem; }
+    .product-card { width: calc(50% - 1rem); }
+}
